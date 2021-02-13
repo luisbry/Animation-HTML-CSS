@@ -1,0 +1,88 @@
+ body {
+ 	background: #000;
+ }
+
+ img {
+ 	width: 300px;
+ 	padding: 20px;
+ 	transition: 1s;
+ 	animation-name: move;
+ 	animation-duration: 4s;
+ 	animation-direction: alternate;
+ 	animation-iteration-count: infinite;
+ 	animation-delay: 5;
+ 	position: relative;
+ }
+
+ img:hover {
+ 	background: white;
+ 	opacity: 2px
+ }
+
+@keyframes move {
+	0% {
+		left: 0%;
+		transform: rotate(360deg);
+		opacity: .2
+	}
+	100% {
+		left: 70%;
+		opacity: .9;
+	}
+}
+
+.move {
+	animation-name: letras;
+	animation-direction: normal;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-delay: 5;
+	position: relative;
+}
+
+.contenedor2 {
+	display: flex;
+	width: 400px;
+	height: 40px;
+	color: white;
+	font-size: 40px;
+	line-height: 40px;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+
+	overflow: hidden;
+}
+
+ul {
+	list-style: none;
+	padding-left: 7px;
+	animation: cambiar 7s infinite;
+}
+
+ul, p {
+	margin: 0;
+}
+
+@keyframes cambiar {
+	0% {margin-top: 0;}
+	20%{margin-top: 0;}
+
+	25%{margin-top: -40px;}
+	50%{margin-top: -40px;}
+
+	55%{margin-top: -80px;}
+	80%{margin-top: -80px;}
+}
+
+.fin {
+	background:#8F8F8F;
+	color: black;
+	text-align: center;
+	font-size: 1em;
+	height: 35px;
+}
